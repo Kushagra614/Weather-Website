@@ -1,4 +1,4 @@
-//http://api.weatherapi.com/v1/current.json?key=220966bde5ed4f21901170752242905&q=Lucknow&aqi=no
+require('dotenv').config();
 
 const tempField = document.querySelector(".temp");
 const areaNameField = document.querySelector(".time_location p");
@@ -14,7 +14,7 @@ form.addEventListener("submit", searchforLocation )
 
 let target = "Delhi";
 const fetchResults =  async () => {
-    let url = `http://api.weatherapi.com/v1/current.json?key=220966bde5ed4f21901170752242905&q=${target}&aqi=no`;
+    let url = `http://api.weatherapi.com/v1/current.json?key=${process.env.API_KEY}&q=${target}&aqi=no`;
 
     const res = await fetch (url);
     const data =  await res.json();
