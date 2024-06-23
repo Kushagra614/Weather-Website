@@ -1,4 +1,3 @@
-require('dotenv').config();
 
 const tempField = document.querySelector(".temp");
 const areaNameField = document.querySelector(".time_location p");
@@ -14,7 +13,7 @@ form.addEventListener("submit", searchforLocation )
 
 let target = "Delhi";
 const fetchResults =  async () => {
-    let url = `http://api.weatherapi.com/v1/current.json?key=${process.env.API_KEY}&q=${target}&aqi=no`;
+    let url = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${target}&aqi=no`;
 
     const res = await fetch (url);
     const data =  await res.json();
@@ -27,6 +26,7 @@ const fetchResults =  async () => {
     let imgcondition = data.current.condition.icon;
     console.log(imgcondition);
     updateData(temp,locationName,time,condition,imgcondition);
+
     
 }
 
