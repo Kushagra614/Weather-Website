@@ -3,8 +3,8 @@
 const tempField = document.querySelector(".temp");
 const areaNameField = document.querySelector(".time_location p");
 const dateField = document.querySelector(".time_location span");
-const conditionField = document.querySelector(".condition p");
-const conditionIcon = document.querySelector("image");
+const conditionField = document.querySelector(".conditions p");
+const conditionIcon = document.querySelector("#image");
 const searchField = document.querySelector(".search_area");
 const form = document.querySelector("form");
 
@@ -40,7 +40,7 @@ function updateData(temp, locationName, time, condition,imgcondition){
     areaNameField.innerText = locationName;
     dateField.innerText = `${splitDate} ${CurrDay} ${splitTime}`;
     conditionField.innerText = condition;
-    // conditionIcon. = imgcondition;
+    conditionIcon.src = imgcondition;
     console.log(conditionIcon);
 
 
