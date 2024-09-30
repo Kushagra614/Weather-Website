@@ -65,14 +65,6 @@ The `temp`, `time_location`, `conditions`, and other sections are styled for a s
 - **Update DOM** 📝: The `updateData()` function updates the UI with the fetched data.
 - **Search Feature** 🔍: The `searchforLocation()` function handles the form submission and updates the weather data based on the user's input.
 
-#### 🧠 Functions Breakdown
-
-- `fetchResults()` 📡: Fetches weather data using the **WeatherAPI** for the target location.
-- `updateData()` 📝: Updates the weather information on the webpage (temperature, location, time, condition, etc.).
-- `searchforLocation()` 🔍: Handles the search form submission and triggers the data fetch based on user input.
-- `getDayName()` 📅: Helper function to convert the date into a human-readable day name (e.g., "Sunday").
-
-
 
 ## 🚀 Future Improvements
 
