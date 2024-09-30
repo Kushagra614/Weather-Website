@@ -72,23 +72,6 @@ The `temp`, `time_location`, `conditions`, and other sections are styled for a s
 - `searchforLocation()` 🔍: Handles the search form submission and triggers the data fetch based on user input.
 - `getDayName()` 📅: Helper function to convert the date into a human-readable day name (e.g., "Sunday").
 
-## 📖 Example Usage
-
-### 🌞 Default weather data for Delhi:
-
-- Temperature: **30°C**
-- Location: **Delhi**
-- Time: **2024-09-24 Tuesday 14:00**
-- Condition: **Clear**
-- Icon: 🌞
-
-### ☁️ After searching for New York:
-
-- Temperature: **22°C**
-- Location: **New York**
-- Time: **2024-09-24 Tuesday 09:00**
-- Condition: **Cloudy**
-- Icon: ☁️
 
 
 ## 🚀 Future Improvements
